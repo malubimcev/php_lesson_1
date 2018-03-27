@@ -1,4 +1,3 @@
-
 <?php
   $name = 'Mikhail';
   $last_name = 'Lyubimcev';
@@ -7,6 +6,7 @@
   $email = 'malubimcev@gmail.com';
   $about_info = 'something about me';
 ?>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <title>About</title>
@@ -15,11 +15,11 @@
   <body>
     <div>
       <h2>Информация о пользователе</h2>
-      <p>Имя: <?php echo($name.' '.$last_name); ?></p>
-      <p>Возраст: <?php echo($age); ?></p>
-      <p>Город: <?php echo($city); ?></p>
-      <p>E-mail: <?php echo($email); ?></p>
-      <p>Обо мне: <?php echo($about_info); ?></p>
+      <p>Имя: <?= $name.' '.$last_name ?></p>
+      <p>Возраст:  <?= $age ?></p>
+      <p>Город: <?= $city ?></p>
+      <p>E-mail: <?= $email ?></p>
+      <p>Обо мне: <?= $about_info ?></p>
     </div>
   </body>
 </html>
